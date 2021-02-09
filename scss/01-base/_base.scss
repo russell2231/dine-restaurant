@@ -4,12 +4,27 @@
 	box-sizing: border-box;
 }
 
+html,
+body {
+	width: 100%;
+	height: 100%;
+	overflow-x: hidden;
+}
+
+p {
+	margin: 0;
+}
+
 .container {
 	padding: 0 2.4rem;
 	max-width: 1110px;
 	margin: 0 auto;
 
 	@include tablet {
-		padding: 0 4rem;
+		padding: 0 9.8rem;
+	}
+
+	@include desktop {
+		padding: 0;
 	}
 }

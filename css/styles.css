@@ -15,10 +15,15 @@ body {
   }
 }
 
+h1,
+h2,
+h3 {
+  line-height: 1.25;
+}
+
 h1 {
   font-size: 3.2rem;
   font-weight: 300;
-  line-height: 1.25;
 }
 
 @media screen and (min-width: 768px) {
@@ -33,11 +38,39 @@ h1 {
   }
 }
 
+h2 {
+  font-size: 3.2rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 768px) {
+  h2 {
+    font-size: 4rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h2 {
+    line-height: 1.4;
+  }
+}
+
 *,
 *::before,
 *::after {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+}
+
+p {
+  margin: 0;
 }
 
 .container {
@@ -48,7 +81,13 @@ h1 {
 
 @media screen and (min-width: 768px) {
   .container {
-    padding: 0 4rem;
+    padding: 0 9.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .container {
+    padding: 0;
   }
 }
 
@@ -125,9 +164,6 @@ h1 {
     background-size: cover;
     height: 992px;
   }
-  .hero__content {
-    padding: 0 5.8rem;
-  }
   .hero .logo {
     width: 103px;
     height: 40px;
@@ -173,6 +209,201 @@ h1 {
   .hero {
     background: url(../../images/homepage/hero-bg-desktop@2x.jpg) no-repeat;
     background-size: cover;
+  }
+}
+
+.about__card {
+  position: relative;
+  top: -70px;
+}
+
+.about__image {
+  width: 100%;
+  height: 400px;
+  -webkit-box-shadow: 0 35px 80px -35px #000;
+          box-shadow: 0 35px 80px -35px #000;
+}
+
+.about .image--enjoyable {
+  background: url(../../images/homepage/enjoyable-place-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .about .image--enjoyable {
+    background: url(../../images/homepage/enjoyable-place-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.about .image--local {
+  background: url(../../images/homepage/locally-sourced-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .about .image--local {
+    background: url(../../images/homepage/locally-sourced-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.about__content {
+  margin: 4.8rem 0 8rem;
+  text-align: center;
+}
+
+.about__content::before {
+  content: url(../../images/patterns/pattern-divide.svg);
+  width: 71px;
+  height: 7px;
+}
+
+.about__heading {
+  margin: 3.2rem 0 1.6rem;
+}
+
+@media screen and (min-width: 768px) {
+  .about {
+    position: relative;
+    padding-bottom: 1px;
+  }
+  .about::before {
+    content: url(../../images/patterns/pattern-curve-top-right.svg);
+    position: absolute;
+    top: 100px;
+    right: 50%;
+  }
+  .about::after {
+    content: url(../../images/patterns/pattern-curve-top-left.svg);
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+  }
+  .about__image {
+    height: 360px;
+  }
+  .about .image--enjoyable {
+    background: url(../../images/homepage/enjoyable-place-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about .image--enjoyable {
+    background: url(../../images/homepage/enjoyable-place-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about .image--local {
+    background: url(../../images/homepage/locally-sourced-tablet.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .about .image--local {
+    background: url(../../images/homepage/locally-sourced-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .about .image--local::before {
+    content: url(../../images/patterns/pattern-lines.svg);
+    position: absolute;
+    top: 228px;
+    right: -50px;
+  }
+  .about__content {
+    padding: 0 5.8rem;
+  }
+  .about__heading {
+    padding: 0 2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about::before {
+    top: 250px;
+    right: 38%;
+  }
+  .about::after {
+    bottom: 0;
+    left: unset;
+    right: 0;
+  }
+  .about__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 100%;
+    padding-bottom: 4rem;
+  }
+  .about__card:nth-of-type(2) {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    padding-bottom: 0;
+    top: unset;
+    bottom: -80px;
+  }
+  .about__image {
+    width: 540px;
+    height: 750px;
+    display: inline-block;
+  }
+  .about__content {
+    width: 445px;
+    text-align: left;
+    padding: 0;
+  }
+  .about__heading {
+    padding: 0;
+    padding-right: 3rem;
+  }
+  .about .image--enjoyable {
+    background: url(../../images/homepage/enjoyable-place-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-resolution: 192dpi), only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .about .image--enjoyable {
+    background: url(../../images/homepage/enjoyable-place-desktop@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about .image--local {
+    background: url(../../images/homepage/locally-sourced-desktop.jpg) no-repeat;
+    background-size: cover;
+    position: relative;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-resolution: 192dpi), only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .about .image--local {
+    background: url(../../images/homepage/locally-sourced-desktop@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .about .image--local::before {
+    top: 300px;
+    right: -100px;
   }
 }
 /*# sourceMappingURL=styles.css.map */

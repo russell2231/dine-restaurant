@@ -1,0 +1,193 @@
+.about {
+	&__card {
+		position: relative;
+		top: -70px;
+	}
+
+	&__image {
+		width: 100%;
+		height: 400px;
+		box-shadow: 0 35px 80px -35px #000;
+	}
+
+	.image--enjoyable {
+		background: url(../../images/homepage/enjoyable-place-mobile.jpg) no-repeat;
+		background-size: cover;
+
+		@include retina {
+			background: url(../../images/homepage/enjoyable-place-mobile@2x.jpg)
+				no-repeat;
+			background-size: cover;
+		}
+	}
+
+	.image--local {
+		background: url(../../images/homepage/locally-sourced-mobile.jpg) no-repeat;
+		background-size: cover;
+
+		@include retina {
+			background: url(../../images/homepage/locally-sourced-mobile@2x.jpg)
+				no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__content {
+		margin: 4.8rem 0 8rem;
+		text-align: center;
+
+		&::before {
+			content: url(../../images/patterns/pattern-divide.svg);
+			width: 71px;
+			height: 7px;
+		}
+	}
+
+	&__heading {
+		margin: 3.2rem 0 1.6rem;
+	}
+}
+
+// MEDIA QUERIES
+
+@include tablet {
+	.about {
+		position: relative;
+		padding-bottom: 1px;
+
+		&::before {
+			content: url(../../images/patterns/pattern-curve-top-right.svg);
+			position: absolute;
+			top: 100px;
+			right: 50%;
+		}
+
+		&::after {
+			content: url(../../images/patterns/pattern-curve-top-left.svg);
+			position: absolute;
+			bottom: 0;
+			left: 50%;
+		}
+
+		&__image {
+			height: 360px;
+		}
+
+		.image--enjoyable {
+			background: url(../../images/homepage/enjoyable-place-tablet.jpg)
+				no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/enjoyable-place-tablet@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.image--local {
+			background: url(../../images/homepage/locally-sourced-tablet.jpg)
+				no-repeat;
+			background-size: cover;
+			position: relative;
+
+			@include retina {
+				background: url(../../images/homepage/locally-sourced-tablet@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+
+			&::before {
+				content: url(../../images/patterns/pattern-lines.svg);
+				position: absolute;
+				top: 228px;
+				right: -50px;
+			}
+		}
+
+		&__content {
+			padding: 0 5.8rem;
+		}
+
+		&__heading {
+			padding: 0 2rem;
+		}
+	}
+}
+
+@include desktop {
+	.about {
+		&::before {
+			top: 250px;
+			right: 38%;
+		}
+
+		&::after {
+			bottom: 0;
+			left: unset;
+			right: 0;
+		}
+
+		&__card {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			width: 100%;
+			padding-bottom: 4rem;
+		}
+
+		&__card:nth-of-type(2) {
+			flex-direction: row-reverse;
+			padding-bottom: 0;
+			top: unset;
+			bottom: -80px;
+		}
+
+		&__image {
+			width: 540px;
+			height: 750px;
+			display: inline-block;
+		}
+
+		&__content {
+			width: 445px;
+			text-align: left;
+			padding: 0;
+		}
+
+		&__heading {
+			padding: 0;
+			padding-right: 3rem;
+		}
+
+		.image--enjoyable {
+			background: url(../../images/homepage/enjoyable-place-desktop.jpg)
+				no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/enjoyable-place-desktop@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.image--local {
+			background: url(../../images/homepage/locally-sourced-desktop.jpg)
+				no-repeat;
+			background-size: cover;
+			position: relative;
+
+			@include retina {
+				background: url(../../images/homepage/locally-sourced-desktop@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+
+			&::before {
+				top: 300px;
+				right: -100px;
+			}
+		}
+	}
+}
