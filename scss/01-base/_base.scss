@@ -1,0 +1,15 @@
+*,
+*::before,
+*::after {
+	box-sizing: border-box;
+}
+
+.container {
+	padding: 0 2.4rem;
+	max-width: 1110px;
+	margin: 0 auto;
+
+	@include tablet {
+		padding: 0 4rem;
+	}
+}

@@ -1,0 +1,102 @@
+.hero {
+	background: url(../../images/homepage/hero-bg-mobile.jpg) no-repeat;
+	background-size: cover;
+	height: 748px;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+
+	.container {
+		padding-top: 25%;
+	}
+
+	.logo {
+		display: inline-block;
+		width: 82px;
+		height: 32px;
+
+		img {
+			width: 100%;
+		}
+	}
+
+	&__heading {
+		margin: 3.2rem 0 2.4rem;
+	}
+
+	&__tagline {
+		margin-top: 0;
+		margin-bottom: 3.2rem;
+	}
+
+	&__heading,
+	&__tagline {
+		color: $text-light;
+	}
+
+	@include retina {
+		background: url(../../images/homepage/hero-bg-mobile@2x.jpg) no-repeat;
+		background-size: cover;
+	}
+}
+
+// MEDIA QUERIES
+@include tablet {
+	.hero {
+		background: url(../../images/homepage/hero-bg-tablet.jpg) no-repeat;
+		background-size: cover;
+		height: 992px;
+
+		&__content {
+			padding: 0 5.8rem;
+		}
+
+		.logo {
+			width: 103px;
+			height: 40px;
+		}
+
+		&__heading {
+			padding: 0 3rem;
+		}
+
+		@include retina {
+			background: url(../../images/homepage/hero-bg-tablet@2x.jpg) no-repeat;
+			background-size: cover;
+		}
+	}
+}
+
+@include desktop {
+	.hero {
+		background: url(../../images/homepage/hero-bg-desktop.jpg) no-repeat;
+		background-size: cover;
+		height: 820px;
+		justify-content: flex-start;
+		text-align: left;
+
+		.container {
+			padding: 6.5rem 0 0;
+		}
+
+		&__content {
+			padding: 0;
+		}
+
+		&__heading {
+			padding: 0;
+			margin-top: 15rem;
+		}
+
+		&__heading,
+		&__tagline {
+			padding-right: 58.5rem;
+		}
+
+		@include retina {
+			background: url(../../images/homepage/hero-bg-desktop@2x.jpg) no-repeat;
+			background-size: cover;
+		}
+	}
+}

@@ -1,0 +1,15 @@
+.btn {
+	cursor: pointer;
+	text-transform: uppercase;
+	text-decoration: none;
+	letter-spacing: 2px;
+	padding: 2.4rem 5.4rem;
+	display: inline-block;
+	font-size: 1.4rem;
+	text-align: center;
+}
+
+.btn--light {
+	border: 1px solid $text-light;
+	color: $text-light;
+}

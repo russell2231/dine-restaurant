@@ -1,1 +1,178 @@
-/* No CSS *//*# sourceMappingURL=styles.css.map */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-family: "Spartan", sans-serif;
+  font-size: 1.5rem;
+  color: #242b37;
+  line-height: 1.6;
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    font-size: 1.8rem;
+  }
+}
+
+h1 {
+  font-size: 3.2rem;
+  font-weight: 300;
+  line-height: 1.25;
+}
+
+@media screen and (min-width: 768px) {
+  h1 {
+    font-size: 4.8rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  h1 {
+    font-size: 6.4rem;
+  }
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.container {
+  padding: 0 2.4rem;
+  max-width: 1110px;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    padding: 0 4rem;
+  }
+}
+
+.btn {
+  cursor: pointer;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 2px;
+  padding: 2.4rem 5.4rem;
+  display: inline-block;
+  font-size: 1.4rem;
+  text-align: center;
+}
+
+.btn--light {
+  border: 1px solid #fff;
+  color: #fff;
+}
+
+.hero {
+  background: url(../../images/homepage/hero-bg-mobile.jpg) no-repeat;
+  background-size: cover;
+  height: 748px;
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hero .container {
+  padding-top: 25%;
+}
+
+.hero .logo {
+  display: inline-block;
+  width: 82px;
+  height: 32px;
+}
+
+.hero .logo img {
+  width: 100%;
+}
+
+.hero__heading {
+  margin: 3.2rem 0 2.4rem;
+}
+
+.hero__tagline {
+  margin-top: 0;
+  margin-bottom: 3.2rem;
+}
+
+.hero__heading, .hero__tagline {
+  color: #fff;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .hero {
+    background: url(../../images/homepage/hero-bg-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .hero {
+    background: url(../../images/homepage/hero-bg-tablet.jpg) no-repeat;
+    background-size: cover;
+    height: 992px;
+  }
+  .hero__content {
+    padding: 0 5.8rem;
+  }
+  .hero .logo {
+    width: 103px;
+    height: 40px;
+  }
+  .hero__heading {
+    padding: 0 3rem;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background: url(../../images/homepage/hero-bg-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .hero {
+    background: url(../../images/homepage/hero-bg-desktop.jpg) no-repeat;
+    background-size: cover;
+    height: 820px;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    text-align: left;
+  }
+  .hero .container {
+    padding: 6.5rem 0 0;
+  }
+  .hero__content {
+    padding: 0;
+  }
+  .hero__heading {
+    padding: 0;
+    margin-top: 15rem;
+  }
+  .hero__heading, .hero__tagline {
+    padding-right: 58.5rem;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-resolution: 192dpi), only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background: url(../../images/homepage/hero-bg-desktop@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=styles.css.map */
