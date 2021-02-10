@@ -1,0 +1,166 @@
+.showcase {
+	background: $primary-gray;
+	color: $text-light;
+	padding: 7.2rem 0 5.2rem;
+	text-align: center;
+
+	&__header {
+		padding-bottom: 4rem;
+	}
+
+	&__header::before {
+		content: url(../../images/patterns/pattern-divide.svg);
+	}
+
+	&__item {
+		padding: 2.4rem 0;
+		border-bottom: 1px solid rgba($color: #fff, $alpha: 0.15%);
+	}
+
+	&__item:last-of-type {
+		border-bottom: 0;
+	}
+
+	&__image {
+		height: 245px;
+	}
+
+	.image--salmon {
+		background: url(../../images/homepage/salmon-mobile.jpg) no-repeat;
+		background-size: cover;
+
+		@include retina {
+			background: url(../../images/homepage/salmon-mobile@2x.jpg) no-repeat;
+			background-size: cover;
+		}
+	}
+
+	.image--mignon {
+		background: url(../../images/homepage/beef-mobile.jpg) no-repeat;
+		background-size: cover;
+
+		@include retina {
+			background: url(../../images/homepage/beef-mobile@2x.jpg) no-repeat;
+			background-size: cover;
+		}
+	}
+	.image--mousse {
+		background: url(../../images/homepage/chocolate-mobile.jpg) no-repeat;
+		background-size: cover;
+
+		@include retina {
+			background: url(../../images/homepage/chocolate-mobile@2x.jpg) no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__content {
+		padding-top: 3.2rem;
+	}
+
+	&__content p {
+		padding: 0 1rem;
+	}
+
+	.item__heading {
+		margin: 0 0 0.7rem;
+	}
+}
+
+// MEDIA QUERIES
+
+@include tablet {
+	.showcase {
+		padding: 9.6rem 0;
+
+		&__header {
+			padding: 0 5.5rem 5.6rem;
+		}
+
+		&__item {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__image {
+			width: 128px;
+			height: 96px;
+			position: relative;
+		}
+
+		&__image::after {
+			content: url(../../images/icons/icon-minus.svg);
+			transform: scale(5, 0.3);
+			position: absolute;
+			top: 0;
+			right: -18px;
+		}
+
+		.image--salmon {
+			background: url(../../images/homepage/salmon-desktop-tablet.jpg) no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/salmon-desktop-tablet@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.image--mignon {
+			background: url(../../images/homepage/beef-desktop-tablet.jpg) no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/beef-desktop-tablet@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+		.image--mousse {
+			background: url(../../images/homepage/chocolate-desktop-tablet.jpg)
+				no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/chocolate-desktop-tablet@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		&__content {
+			text-align: left;
+			width: 70%;
+			padding: 0.4rem 0;
+			padding-left: 2rem;
+		}
+
+		&__content p {
+			font-size: 1.5rem;
+			padding: 0;
+		}
+	}
+}
+
+@include desktop {
+	.showcase {
+		padding: 20rem 0 12rem;
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: flex-start;
+			text-align: left;
+		}
+
+		&__header {
+			width: 53%;
+		}
+
+		&__items {
+			width: 50%;
+		}
+	}
+}

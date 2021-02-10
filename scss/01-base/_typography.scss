@@ -44,3 +44,14 @@ h2 {
 		line-height: 1.4;
 	}
 }
+
+h3 {
+	font-size: 1.8rem;
+	font-weight: $bold;
+}
+
+p {
+	@include desktop {
+		line-height: 1.8;
+	}
+}

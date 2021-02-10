@@ -55,6 +55,17 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+@media screen and (min-width: 1440px) {
+  p {
+    line-height: 1.8;
+  }
+}
+
 *,
 *::before,
 *::after {
@@ -266,7 +277,8 @@ p {
 @media screen and (min-width: 768px) {
   .about {
     position: relative;
-    padding-bottom: 1px;
+    margin-bottom: -1rem;
+    padding-bottom: 4rem;
   }
   .about::before {
     content: url(../../images/patterns/pattern-curve-top-right.svg);
@@ -404,6 +416,191 @@ p {
   .about .image--local::before {
     top: 300px;
     right: -100px;
+  }
+}
+
+.showcase {
+  background: #111;
+  color: #fff;
+  padding: 7.2rem 0 5.2rem;
+  text-align: center;
+}
+
+.showcase__header {
+  padding-bottom: 4rem;
+}
+
+.showcase__header::before {
+  content: url(../../images/patterns/pattern-divide.svg);
+}
+
+.showcase__item {
+  padding: 2.4rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+.showcase__item:last-of-type {
+  border-bottom: 0;
+}
+
+.showcase__image {
+  height: 245px;
+}
+
+.showcase .image--salmon {
+  background: url(../../images/homepage/salmon-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .showcase .image--salmon {
+    background: url(../../images/homepage/salmon-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.showcase .image--mignon {
+  background: url(../../images/homepage/beef-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .showcase .image--mignon {
+    background: url(../../images/homepage/beef-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.showcase .image--mousse {
+  background: url(../../images/homepage/chocolate-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .showcase .image--mousse {
+    background: url(../../images/homepage/chocolate-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.showcase__content {
+  padding-top: 3.2rem;
+}
+
+.showcase__content p {
+  padding: 0 1rem;
+}
+
+.showcase .item__heading {
+  margin: 0 0 0.7rem;
+}
+
+@media screen and (min-width: 768px) {
+  .showcase {
+    padding: 9.6rem 0;
+  }
+  .showcase__header {
+    padding: 0 5.5rem 5.6rem;
+  }
+  .showcase__item {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .showcase__image {
+    width: 128px;
+    height: 96px;
+    position: relative;
+  }
+  .showcase__image::after {
+    content: url(../../images/icons/icon-minus.svg);
+    -webkit-transform: scale(5, 0.3);
+            transform: scale(5, 0.3);
+    position: absolute;
+    top: 0;
+    right: -18px;
+  }
+  .showcase .image--salmon {
+    background: url(../../images/homepage/salmon-desktop-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .showcase .image--salmon {
+    background: url(../../images/homepage/salmon-desktop-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .showcase .image--mignon {
+    background: url(../../images/homepage/beef-desktop-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .showcase .image--mignon {
+    background: url(../../images/homepage/beef-desktop-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .showcase .image--mousse {
+    background: url(../../images/homepage/chocolate-desktop-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .showcase .image--mousse {
+    background: url(../../images/homepage/chocolate-desktop-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .showcase__content {
+    text-align: left;
+    width: 70%;
+    padding: 0.4rem 0;
+    padding-left: 2rem;
+  }
+  .showcase__content p {
+    font-size: 1.5rem;
+    padding: 0;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .showcase {
+    padding: 20rem 0 12rem;
+  }
+  .showcase .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    text-align: left;
+  }
+  .showcase__header {
+    width: 53%;
+  }
+  .showcase__items {
+    width: 50%;
   }
 }
 /*# sourceMappingURL=styles.css.map */
