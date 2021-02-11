@@ -118,6 +118,11 @@ p {
   color: #fff;
 }
 
+.btn--dark {
+  background: #111;
+  color: #fff;
+}
+
 .hero {
   background: url(../../images/homepage/hero-bg-mobile.jpg) no-repeat;
   background-size: cover;
@@ -601,6 +606,345 @@ p {
   }
   .showcase__items {
     width: 50%;
+  }
+}
+
+.features {
+  padding: 8rem 0;
+  text-align: center;
+}
+
+.features__image-carousel {
+  height: 100%;
+  overflow-x: hidden;
+  -webkit-box-shadow: 0 35px 80px -35px #000;
+          box-shadow: 0 35px 80px -35px #000;
+}
+
+.features .slider {
+  width: 300%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-transition: -webkit-transform 1s ease-in-out;
+  transition: -webkit-transform 1s ease-in-out;
+  transition: transform 1s ease-in-out;
+  transition: transform 1s ease-in-out, -webkit-transform 1s ease-in-out;
+}
+
+.features__image {
+  height: 400px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+}
+
+.features .image--gathering {
+  background: url(../../images/homepage/family-gathering-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .features .image--gathering {
+    background: url(../../images/homepage/family-gathering-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.features .image--special {
+  background: url(../../images/homepage/special-events-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .features .image--special {
+    background: url(../../images/homepage/special-events-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.features .image--social {
+  background: url(../../images/homepage/social-events-mobile.jpg) no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .features .image--social {
+    background: url(../../images/homepage/social-events-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.features__content {
+  padding-top: 4.8rem;
+}
+
+.features__list {
+  list-style: none;
+  padding-left: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .list__item {
+  padding-bottom: 1.6rem;
+}
+
+.features .list__item a {
+  color: #242b37;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  text-decoration: none;
+  opacity: 0.5;
+  font-weight: 600;
+}
+
+.features .list__item.selected a {
+  opacity: 1;
+}
+
+.features .list__item.selected {
+  position: relative;
+}
+
+.features .list__item.selected::after {
+  content: url(../../images/icons/icon-minus.svg);
+  position: absolute;
+  left: 50%;
+  bottom: 6px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  -webkit-transform: scaleX(8);
+          transform: scaleX(8);
+}
+
+.features__header-carousel {
+  height: 100%;
+  overflow-x: hidden;
+}
+
+.features__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-preferred-size: 100%;
+      flex-basis: 100%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 0.8rem 0 2.4rem;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.features .title {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+
+.features .btn {
+  margin-top: 3.2rem;
+}
+
+@media screen and (min-width: 768px) {
+  .features {
+    padding: 12rem 0;
+    position: relative;
+  }
+  .features::before {
+    content: url(../../images/patterns/pattern-curve-top-right.svg);
+    position: absolute;
+    top: 0;
+    right: 47%;
+  }
+  .features::after {
+    content: url(../../images/patterns/pattern-lines.svg);
+    position: absolute;
+    left: 6.5%;
+    top: 82px;
+  }
+  .features .image--gathering {
+    background: url(../../images/homepage/family-gathering-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .features .image--gathering {
+    background: url(../../images/homepage/family-gathering-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features .image--special {
+    background: url(../../images/homepage/special-events-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .features .image--special {
+    background: url(../../images/homepage/special-events-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features .image--social {
+    background: url(../../images/homepage/social-events-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .features .image--social {
+    background: url(../../images/homepage/social-events-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .features__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .features .list__item {
+    padding-bottom: 2.4rem;
+  }
+  .features__heading {
+    padding: 2.4rem 5.8rem 3.2rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .features {
+    text-align: left;
+  }
+  .features::before {
+    right: 63%;
+  }
+  .features .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+  .features__image-carousel {
+    width: 540px;
+  }
+  .features__content {
+    width: 500px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding-left: 5rem;
+  }
+  .features__image {
+    height: 600px;
+  }
+  .features .image--gathering {
+    background: url(../../images/homepage/family-gathering-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-resolution: 192dpi), only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .features .image--gathering {
+    background: url(../../images/homepage/family-gathering-desktop@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .features .image--special {
+    background: url(../../images/homepage/special-events-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-resolution: 192dpi), only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .features .image--special {
+    background: url(../../images/homepage/special-events-desktop@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .features .image--social {
+    background: url(../../images/homepage/social-events-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-resolution: 192dpi), only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .features .image--social {
+    background: url(../../images/homepage/social-events-desktop@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .features__nav {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .features__list {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .features__heading {
+    padding: 0;
+    padding-bottom: 3.2rem;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .features .list__item.selected::after {
+    left: -80px;
+    top: -5px;
+    bottom: unset;
+    -webkit-transform: translateX(0);
+            transform: translateX(0);
+    -webkit-transform: scaleX(15);
+            transform: scaleX(15);
   }
 }
 /*# sourceMappingURL=styles.css.map */

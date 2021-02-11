@@ -1,0 +1,280 @@
+.features {
+	padding: 8rem 0;
+	text-align: center;
+
+	&__image-carousel {
+		height: 100%;
+		overflow-x: hidden;
+		box-shadow: 0 35px 80px -35px #000;
+	}
+
+	.slider {
+		width: 300%;
+		height: 100%;
+		display: flex;
+		transition: transform 1s ease-in-out;
+	}
+
+	&__image {
+		height: 400px;
+		display: flex;
+		flex-basis: 100%;
+	}
+
+	.image--gathering {
+		background: url(../../images/homepage/family-gathering-mobile.jpg) no-repeat;
+		background-size: cover;
+
+		@include retina {
+			background: url(../../images/homepage/family-gathering-mobile@2x.jpg)
+				no-repeat;
+			background-size: cover;
+		}
+	}
+
+	.image--special {
+		background: url(../../images/homepage/special-events-mobile.jpg) no-repeat;
+		background-size: cover;
+
+		@include retina {
+			background: url(../../images/homepage/special-events-mobile@2x.jpg)
+				no-repeat;
+			background-size: cover;
+		}
+	}
+
+	.image--social {
+		background: url(../../images/homepage/social-events-mobile.jpg) no-repeat;
+		background-size: cover;
+
+		@include retina {
+			background: url(../../images/homepage/social-events-mobile@2x.jpg)
+				no-repeat;
+			background-size: cover;
+		}
+	}
+
+	&__content {
+		padding-top: 4.8rem;
+	}
+
+	&__list {
+		list-style: none;
+		padding-left: 0;
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.list__item {
+		padding-bottom: 1.6rem;
+	}
+
+	.list__item a {
+		color: $text-primary;
+		letter-spacing: 2px;
+		text-transform: uppercase;
+		font-size: 1.4rem;
+		text-decoration: none;
+		opacity: 0.5;
+		font-weight: $semibold;
+	}
+
+	.list__item.selected a {
+		opacity: 1;
+	}
+
+	.list__item.selected {
+		position: relative;
+	}
+
+	.list__item.selected::after {
+		content: url(../../images/icons/icon-minus.svg);
+		position: absolute;
+		left: 50%;
+		bottom: 6px;
+		transform: translateX(-50%);
+		transform: scaleX(8);
+	}
+
+	&__header-carousel {
+		height: 100%;
+		overflow-x: hidden;
+	}
+
+	&__heading {
+		display: flex;
+		flex-basis: 100%;
+		flex-direction: column;
+		padding: 0.8rem 0 2.4rem;
+		align-items: center;
+	}
+
+	.title {
+		margin-top: 0;
+		margin-bottom: 1.6rem;
+	}
+
+	.btn {
+		margin-top: 3.2rem;
+	}
+}
+
+// MEDIA QUERIES
+@include tablet {
+	.features {
+		padding: 12rem 0;
+		position: relative;
+
+		&::before {
+			content: url(../../images/patterns/pattern-curve-top-right.svg);
+			position: absolute;
+			top: 0;
+			right: 47%;
+		}
+
+		&::after {
+			content: url(../../images/patterns/pattern-lines.svg);
+			position: absolute;
+			left: 6.5%;
+			top: 82px;
+		}
+
+		.image--gathering {
+			background: url(../../images/homepage/family-gathering-tablet.jpg)
+				no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/family-gathering-tablet@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.image--special {
+			background: url(../../images/homepage/special-events-tablet.jpg) no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/special-events-tablet@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.image--social {
+			background: url(../../images/homepage/social-events-tablet.jpg) no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/social-events-tablet@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		&__list {
+			flex-direction: row;
+			justify-content: space-between;
+		}
+
+		.list__item {
+			padding-bottom: 2.4rem;
+		}
+
+		&__heading {
+			padding: 2.4rem 5.8rem 3.2rem;
+		}
+	}
+}
+
+@include desktop {
+	.features {
+		text-align: left;
+
+		&::before {
+			right: 63%;
+		}
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__image-carousel {
+			width: 540px;
+		}
+
+		&__content {
+			width: 500px;
+			display: flex;
+			flex-direction: column;
+			padding-left: 5rem;
+		}
+
+		&__image {
+			height: 600px;
+		}
+
+		.image--gathering {
+			background: url(../../images/homepage/family-gathering-desktop.jpg)
+				no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/family-gathering-desktop@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.image--special {
+			background: url(../../images/homepage/special-events-desktop.jpg)
+				no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/special-events-desktop@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		.image--social {
+			background: url(../../images/homepage/social-events-desktop.jpg) no-repeat;
+			background-size: cover;
+
+			@include retina {
+				background: url(../../images/homepage/social-events-desktop@2x.jpg)
+					no-repeat;
+				background-size: cover;
+			}
+		}
+
+		&__nav {
+			order: 2;
+		}
+
+		&__list {
+			flex-direction: column;
+			align-items: flex-start;
+			justify-content: center;
+		}
+
+		&__heading {
+			padding: 0;
+			padding-bottom: 3.2rem;
+			order: 1;
+			align-items: flex-start;
+		}
+
+		.list__item.selected::after {
+			left: -80px;
+			top: -5px;
+			bottom: unset;
+			transform: translateX(0);
+			transform: scaleX(15);
+		}
+	}
+}
