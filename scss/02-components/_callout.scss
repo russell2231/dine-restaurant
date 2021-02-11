@@ -1,0 +1,61 @@
+.callout {
+	background: url(../../images/homepage/ready-bg-mobile.jpg) no-repeat;
+	background-size: cover;
+	padding: 8rem 0;
+	text-align: center;
+
+	@include retina {
+		background: url(../../images/homepage/ready-bg-mobile@2x.jpg) no-repeat;
+		background-size: cover;
+	}
+
+	&__heading {
+		color: $text-light;
+		margin-top: 0;
+		margin-bottom: 2.4rem;
+	}
+}
+
+// Media Queries
+@include tablet {
+	.callout {
+		background: url(../../images/homepage/ready-bg-tablet.jpg) no-repeat;
+		background-size: cover;
+		padding: 6.5rem 0;
+		height: 272px;
+
+		@include retina {
+			background: url(../../images/homepage/ready-bg-tablet@2x.jpg) no-repeat;
+			background-size: cover;
+		}
+
+		.container {
+			padding: 0 5.5rem;
+		}
+	}
+}
+
+@include desktop {
+	.callout {
+		background: url(../../images/homepage/ready-bg-desktop.jpg) no-repeat;
+		background-size: cover;
+		padding: 9.2rem 0;
+		height: 240px;
+
+		@include retina {
+			background: url(../../images/homepage/ready-bg-desktop@2x.jpg) no-repeat;
+			background-size: cover;
+		}
+
+		.container {
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+			padding: 0;
+		}
+
+		&__heading {
+			margin: 0;
+		}
+	}
+}

@@ -116,6 +116,7 @@ p {
 .btn--light {
   border: 1px solid #fff;
   color: #fff;
+  background: transparent;
 }
 
 .btn--dark {
@@ -945,6 +946,82 @@ p {
             transform: translateX(0);
     -webkit-transform: scaleX(15);
             transform: scaleX(15);
+  }
+}
+
+.callout {
+  background: url(../../images/homepage/ready-bg-mobile.jpg) no-repeat;
+  background-size: cover;
+  padding: 8rem 0;
+  text-align: center;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .callout {
+    background: url(../../images/homepage/ready-bg-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.callout__heading {
+  color: #fff;
+  margin-top: 0;
+  margin-bottom: 2.4rem;
+}
+
+@media screen and (min-width: 768px) {
+  .callout {
+    background: url(../../images/homepage/ready-bg-tablet.jpg) no-repeat;
+    background-size: cover;
+    padding: 6.5rem 0;
+    height: 272px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .callout {
+    background: url(../../images/homepage/ready-bg-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .callout .container {
+    padding: 0 5.5rem;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .callout {
+    background: url(../../images/homepage/ready-bg-desktop.jpg) no-repeat;
+    background-size: cover;
+    padding: 9.2rem 0;
+    height: 240px;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-resolution: 192dpi), only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .callout {
+    background: url(../../images/homepage/ready-bg-desktop@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .callout .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    padding: 0;
+  }
+  .callout__heading {
+    margin: 0;
   }
 }
 /*# sourceMappingURL=styles.css.map */
