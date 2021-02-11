@@ -1105,4 +1105,108 @@ p {
     margin-bottom: 0;
   }
 }
+
+.booking-hero {
+  background: url(../../../images/booking/hero-bg-mobile.jpg) no-repeat;
+  background-size: cover;
+  height: 600px;
+  padding-top: 5.6rem;
+  color: #fff;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  .booking-hero {
+    background: url(../../../images/booking/hero-bg-mobile@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+.booking-hero .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.booking-hero .logo {
+  display: inline-block;
+  margin-bottom: 4rem;
+}
+
+.booking-hero .logo img {
+  width: 82px;
+}
+
+.booking-hero__heading {
+  margin-top: 0;
+  margin-bottom: 1.6rem;
+}
+
+.booking-hero__tagline {
+  margin-bottom: 2.4rem;
+  text-align: center;
+}
+
+@media screen and (min-width: 768px) {
+  .booking-hero {
+    background: url(../../../images/booking/hero-bg-tablet.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-device-pixel-ratio: 2), only screen and (min-width: 768px) and (min-resolution: 192dpi), only screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .booking-hero {
+    background: url(../../../images/booking/hero-bg-tablet@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .booking-hero .logo {
+    -ms-flex-item-align: start;
+        align-self: flex-start;
+    margin-bottom: 6.4rem;
+  }
+  .booking-hero .logo img {
+    width: 103px;
+  }
+  .booking-hero .btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .booking-hero {
+    background: url(../../../images/booking/hero-bg-desktop.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media only screen and (min-width: 1440px) and (-webkit-min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min--moz-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-device-pixel-ratio: 2), only screen and (min-width: 1440px) and (min-resolution: 192dpi), only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .booking-hero {
+    background: url(../../../images/booking/hero-bg-desktop@2x.jpg) no-repeat;
+    background-size: cover;
+  }
+}
+
+@media screen and (min-width: 1440px) {
+  .booking-hero .container {
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+  }
+  .booking-hero .logo {
+    margin-bottom: 15rem;
+  }
+  .booking-hero__tagline {
+    text-align: left;
+    width: 40%;
+  }
+}
 /*# sourceMappingURL=styles.css.map */
