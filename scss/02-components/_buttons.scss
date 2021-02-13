@@ -7,6 +7,7 @@
 	display: inline-block;
 	font-size: 1.4rem;
 	text-align: center;
+	white-space: nowrap;
 }
 
 .btn--light {
@@ -18,4 +19,5 @@
 .btn--dark {
 	background: $primary-gray;
 	color: $text-light;
+	border: none;
 }
