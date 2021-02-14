@@ -4,3 +4,34 @@
 		top: -135px;
 	}
 }
+
+@include desktop {
+	.reservation {
+		position: relative;
+		height: 320px;
+
+		&::before {
+			content: '';
+			background: url(../../../images/patterns/pattern-curve-bottom-right.svg)
+				no-repeat;
+			background-size: 100% 320px;
+			width: 100%;
+			height: 320px;
+			position: absolute;
+			right: 30%;
+		}
+
+		&__form {
+			margin-left: auto;
+			top: -342px;
+		}
+
+		&__form::before {
+			content: url(../../../images/patterns/pattern-lines.svg);
+			position: absolute;
+			bottom: -50px;
+			left: -80px;
+			z-index: -1;
+		}
+	}
+}
