@@ -1262,30 +1262,99 @@ p {
 
 .reservation__form .date input,
 .reservation__form .time input {
-  width: 27%;
+  width: 30%;
   text-align: center;
+  display: inline-block;
 }
 
-.reservation__form .period {
+.reservation__form .custom-select-wrapper {
+  position: relative;
+  -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
   width: 27%;
+}
+
+.reservation__form .custom-select {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.reservation__form .custom-select__trigger {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 1rem 1.6rem;
+  font-size: 1.8rem;
+  height: 45px;
+  line-height: 60px;
+  cursor: pointer;
   border-bottom: 1px solid #8e8e8e;
-  text-align: center;
 }
 
-.reservation__form .period img {
+.reservation__form .custom-options {
+  position: absolute;
+  display: block;
+  top: 100%;
+  left: 0;
+  right: 0;
+  -webkit-box-shadow: 0 0 12px -5px #000;
+          box-shadow: 0 0 12px -5px #000;
+  background: #fff;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 2;
+}
+
+.reservation__form .custom-select.open .custom-options {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.reservation__form .custom-option {
+  position: relative;
+  display: block;
+  padding: 1rem 2.2rem 1rem 3.7rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
+}
+
+.reservation__form .custom-option:hover {
+  cursor: pointer;
+  background-color: #b2b2b2;
+}
+
+.reservation__form .custom-option.selected::before {
+  content: url(../../../images/icons/icon-check.svg);
+  position: absolute;
+  left: 16px;
+}
+
+.reservation__form .arrow {
   width: 16px;
   height: 8px;
 }
 
-.reservation__form .period input {
-  width: 55%;
-  border-bottom: none;
-  padding-bottom: 0;
-  cursor: pointer;
-  background: transparent;
-}
-
-.reservation__form .party {
+.reservation__form .party-wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1296,11 +1365,12 @@ p {
   padding: 0 2rem 1.6rem;
 }
 
-.reservation__form .party img {
+.reservation__form .party-wrapper img {
   cursor: pointer;
+  padding: 1rem;
 }
 
-.reservation__form .party input {
+.reservation__form .party-wrapper input {
   text-align: center;
   border-bottom: none;
   background: transparent;
@@ -1328,7 +1398,7 @@ p {
   }
   .reservation__form .date,
   .reservation__form .time {
-    width: 65%;
+    width: 70%;
   }
   .reservation__form .party {
     padding: 0 3rem 1.6rem;

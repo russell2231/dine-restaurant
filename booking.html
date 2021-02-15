@@ -91,27 +91,42 @@
 								<input
 									type="number"
 									name=""
-									id=""
+									class="minutes"
 									maxlength="2"
 									min="00"
-									max="59"
+									max="45"
+									step="15"
 									placeholder="00"
 								/>
-								<div class="period">
-									<input autocomplete="off" value="AM" disabled />
-									<img src="images/icons/icon-arrow.svg" alt="" />
-									<datalist id="time">
-										<option value="AM">AM</option>
-										<option value="PM">PM</option>
-									</datalist>
+								<div class="custom-select-wrapper">
+									<div class="custom-select">
+										<div class="custom-select__trigger">
+											<span>AM</span>
+											<img
+												class="arrow"
+												src="images/icons/icon-arrow.svg"
+												alt=""
+											/>
+										</div>
+										<div class="custom-options">
+											<span class="custom-option selected" data-value="am"
+												>AM</span
+											>
+											<span class="custom-option" data-value="pm">PM</span>
+										</div>
+									</div>
 								</div>
 							</div>
 						</div>
 						<div class="form-group">
-							<div class="party">
-								<img src="images/icons/icon-minus.svg" alt="" />
-								<input type="text" disabled value="4 people" />
-								<img src="images/icons/icon-plus.svg" alt="" />
+							<div class="party-wrapper">
+								<img
+									class="subtract"
+									src="images/icons/icon-minus.svg"
+									alt=""
+								/>
+								<input class="party" type="text" disabled value="4 people" />
+								<img class="add" src="images/icons/icon-plus.svg" alt="" />
 							</div>
 						</div>
 						<button type="submit" class="btn btn--dark">
@@ -143,5 +158,7 @@
 				</div>
 			</div>
 		</footer>
+
+		<script src="js/booking.js"></script>
 	</body>
 </html>
