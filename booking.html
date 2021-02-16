@@ -40,12 +40,17 @@
 					<form class="reservation__form">
 						<div class="form-group">
 							<input class="name" type="text" placeholder="Name" />
+							<span class="error-msg">This field is required</span>
 						</div>
 						<div class="form-group">
 							<input class="email" type="email" placeholder="Email" />
+							<span class="error-msg">This field is required</span>
 						</div>
 						<div class="form-group form-group--inline">
 							<label for="date">Pick a date</label>
+							<span class="error-msg error-inline"
+								>This field is incomplete</span
+							>
 							<div class="date">
 								<input
 									type="number"
@@ -78,6 +83,9 @@
 						</div>
 						<div class="form-group form-group--inline">
 							<label for="time">Pick a time</label>
+							<span class="error-msg error-inline"
+								>This field is incomplete</span
+							>
 							<div class="time">
 								<input
 									type="number"
@@ -125,7 +133,7 @@
 									src="images/icons/icon-minus.svg"
 									alt=""
 								/>
-								<input class="party" type="text" disabled value="4 people" />
+								<span class="party" data-value="4">4 people</span>
 								<img class="add" src="images/icons/icon-plus.svg" alt="" />
 							</div>
 						</div>

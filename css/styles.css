@@ -1228,7 +1228,6 @@ p {
 .reservation__form label {
   font-size: 1.8rem;
   display: inline-block;
-  padding-bottom: 0.8rem;
 }
 
 .reservation__form input {
@@ -1252,12 +1251,14 @@ p {
 
 .reservation__form .date,
 .reservation__form .time {
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  padding-top: 0.8rem;
 }
 
 .reservation__form .date input,
@@ -1361,6 +1362,9 @@ p {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   border-bottom: 1px solid #8e8e8e;
   padding: 0 2rem 1.6rem;
 }
@@ -1370,18 +1374,56 @@ p {
   padding: 1rem;
 }
 
-.reservation__form .party-wrapper input {
-  text-align: center;
-  border-bottom: none;
-  background: transparent;
-  padding-bottom: 0;
-  color: #111;
+.reservation__form .party-wrapper .party {
+  display: inline-block;
   font-weight: 700;
+  padding-bottom: 0;
+  font-size: 1.8rem;
 }
 
 .reservation__form .btn {
   padding: 1.8rem 3.5rem;
   width: 100%;
+}
+
+.reservation__form .error-msg {
+  display: none;
+  padding-top: 0.5rem;
+  font-size: 1rem;
+  color: #b54949;
+}
+
+.reservation__form .error .error-msg {
+  display: block;
+}
+
+.reservation__form .error label {
+  color: #b54949;
+}
+
+.reservation__form .error input {
+  border-color: #b54949;
+  color: #b54949;
+}
+
+.reservation__form .error input::-webkit-input-placeholder {
+  color: #b54949;
+  opacity: 0.5;
+}
+
+.reservation__form .error input:-ms-input-placeholder {
+  color: #b54949;
+  opacity: 0.5;
+}
+
+.reservation__form .error input::-ms-input-placeholder {
+  color: #b54949;
+  opacity: 0.5;
+}
+
+.reservation__form .error input::placeholder {
+  color: #b54949;
+  opacity: 0.5;
 }
 
 @media screen and (min-width: 768px) {
@@ -1395,13 +1437,20 @@ p {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    position: relative;
   }
   .reservation__form .date,
   .reservation__form .time {
     width: 70%;
   }
-  .reservation__form .party {
-    padding: 0 3rem 1.6rem;
+  .reservation__form .name + .error-msg,
+  .reservation__form .email + .error-msg {
+    text-align: left;
+    padding-left: 1.6rem;
+  }
+  .reservation__form .error-inline {
+    position: absolute;
+    top: 30px;
   }
 }
 
