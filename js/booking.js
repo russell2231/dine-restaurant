@@ -86,8 +86,12 @@ reservationForm.addEventListener('submit', (e) => {
 			});
 		}
 	} else {
-		for (let input of reservationInputs) {
-			input.value = '';
-		}
+		reservationForm.innerHTML = `
+			<div class="success">
+				<h2>Thank you for booking!</h2>
+				<p>We will see you soon</p>
+				<a href="/" class="btn btn--dark">Back to Home</a>
+			</div>
+		`;
 	}
 });
